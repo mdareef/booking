@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"rel="stylesheet" >
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
+        <title>Booking</title>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg    fixed-top"style=" transition: top 0.3s ease-in-out;position: fixed ; background-color:#4a148c;">
+        <div class="container  ">
+
+          <ul class="nav navbar-nav ">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" width="auto" height="25" alt="" >
+          </a>
+          <div class="navbar-nav ml-auto "  >
+          <li  class="nav-item mr-4">
+          <input type="hidden" value="INR">
+          <a href="#" class=" text-light"   aria-label="Select your currency. Your current currency is Indian Rupee" role="button">
+          Rs.
+          </a>
+          </li>
+          <li class="nav-item mr-4" >
+          <a href="#"   aria-label="Select your language. Your current language is English (US)" role="button">
+          <img src="img/language.png" alt="English (US)">
+          </a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="text-light " href="#">Refer Friends&Earn</a>
+          </li>
+          <li class="nav-item mr-4">
+          <button type="button" class="btn btn-outline-light">List Your Property</button>
+          </li>
+          <li class="nav-item mr-4">
+          <a class="btn btn-light" href="#" role="button">Register</a>
+          </li>
+          <li class="nav-item mr-4">
+          <a class="btn btn-light" href="#" role="button">Login</a>
+          </li>
+
+        </div>
+
+          <ul class="navbar-nav nav-pills pt-3">
+                <li class="nav-item active mr-3 ">
+                  <a class="nav-link active text-light" data-toggle="pill" href="#">Accommodations
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item mr-3">
+                  <a class="nav-link text-light"data-toggle="pill" href="#">Flights</a>
+                </li>
+                <li class="nav-item mr-3">
+                  <a class="nav-link text-light"data-toggle="pill" href="#">Car rentals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" data-toggle="pill" href="#">Airport Taxi</a>
+                </li>
+
+</ul>
+</ul>
+</div>
+</nav>
+
+
+<section class="form " style="padding: 120px 0;">
+<div class="container ">
+  <div class="d-flex justify-content-between">
+<div class="card " style="width: 30rem; background-color:#f57f17;">
+  <div class="card-body">
+<h3>Find Deals for Any Season</h3>
+  <small>From cozy country homes to funky city apartments</small>
+  <form>
+  <div class="form-group">
+    <label for="name">Destination, property name or address:</label>
+
+    <input type="name" class="form-control" id="InputName" aria-describedby="name" placeholder="More Places than you could Ever Go (But You Can Try!)">
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-6 ">
+    <label for="date1">Check-in</label>
+    <input type="Date1" class="form-control" id="InputDate1" placeholder="Check-in Date">
+</div>
+<div class="form-group col-md-6">
+    <label for="Date2">Check-out Date</label>
+    <input type="Date2" class="form-control" id="InputDate2" placeholder="Check-out Date">
+  </div>
+</div>
+<div class="form-row">
+<div class="form-group col-md-4 ">
+  <label for="adults"></label>
+  <select id="inputadult" class="form-control">
+         <option selected>1 adults</option>
+         <option>1 adults</option>
+         <option>2 adults</option>
+         <option>3 adults</option>
+         <option>4 adults</option>
+        <option>5 adults</option>
+        <option>6 adults</option>
+        <option>7 adults</option>
+        <option>8 adults</option>
+        <option>9 adults</option>
+        <option>10 adults</option>
+        <option>11 adults</option>
+        <option>12 adults</option>
+       </select>
+
+</div>
+<div class="form-group col-md-4 ">
+  <label for="Children"></label>
+  <select id="inputchildren" class="form-control">
+         <option selected> 1 Children</option>
+         <option>2 Children</option>
+         <option>3 Children</option>
+         <option>4 Children</option>
+        <option>5 Children</option>
+        <option>6 Children</option>
+        <option>7 Children</option>
+        <option>8 Children</option>
+        <option>9 Children</option>
+        <option>10 Children</option>
+        <option>11 Children</option>
+        <option>12 Children</option>
+       </select>
+
+</div>
+<div class="form-group col-md-4 ">
+  <label for="room"></label>
+  <select id="inputroom" class="form-control">
+         <option selected> 1 room</option>
+         <option>2 room</option>
+         <option>3 room</option>
+         <option>4 room</option>
+        <option>5 room</option>
+        <option>6 room</option>
+        <option>7 room</option>
+        <option>8 room</option>
+        <option>9 room</option>
+        <option>10 room</option>
+        <option>11 room</option>
+        <option>12 room</option>
+       </select>
+
+</div>
+</div>
+<div class="form-check form-inline">
+       <input class="form-check-input" type="checkbox" id="checkbox">
+       <label class="form-check-label" for="checkbox">
+         I'm traveling for work
+       </label>
+
+  <button type="search" class="btn btn-primary ml-auto">Search</button>
+</div>
+</form>
+  </div>
+</div>
+<a href="#">
+  <img src="img/hyd.jpg" style="height:auto; width:500px;"></a>
+</div>
+<div class="float-right mt-4">
+  <a href="#">
+
+<img src="img/delhi.jpg" style="height:auto; width:500px;"></a>
+
+</div>
+</div>
+
+<div class="container pt-4  ">
+<div class="card " style="width: 30rem;">
+  <div class="card-body">
+    <small>Register. Earn. Pay for Your Passions</small>
+    <p><strong>
+      List your place on Booking.com
+    </strong></p>
+    <button type="more" class="btn btn-primary ml-auto">Lern More</button>
+  </div>
+</div>
+</div>
+<div class="container pt-4">
+<div class="card " style="width: 30rem;">
+  <div class="card-body">
+    <p><strong>
+      Refer a friend to Booking.com, and you both earn a cash reward!
+    </strong></p>
+    <button type="more" class="btn btn-primary ml-auto">Start earnings!</button>
+  </div>
+</div>
+</div>
+
+<div class="conatainer mt-4">
+  <div class="d-flex justify-content-around">
+    <a href="#">
+  <img src="img/delhi.jpg" style="height:290px; width:300px;"></a>
+  <a href="#">
+  <img src="img/mum.jpg" style="height:290px; width:300px;"></a>
+  <a href="#">
+  <img src="img/chennai.jpg" style="height:290px; width:300px;"></a>
+
+</div>
+</div>
+
+<div class="container-fluid mt-4 " style="background-color:#4a148c;">
+  <br></br>
+  <center class="text-light ">
+    <h3>Save Time,Save Money!</h3>
+<h6>Sign up and we'll will send the best deals to you</h6>
+<div class="input-group col-md-4 ">
+
+
+  <input type="text" class="form-control col-md-12 mr-2" placeholder="Your Email" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-primary bg-primary text-light" type="button">Subscribe</button>
+  </div>
+
+</div>
+
+<input class="form-check-input" type="checkbox" id="checkbox">
+<label class="form-check-label" for="checkbox">
+Send me a link to get the FREE Booking.com app!
+</label>
+</center>
+<br></br>
+</div>
+<div class="conatainer " style="background-color:#006064;">
+  <center >
+  <button type="button" class="btn btn-outline-light mr-3 mt-3">Refer friends&earn</button>
+  <button type="button" class="btn btn-outline-light mr-3 mt-3 ">List Your Property</button>
+</center>
+<br><hr class="style6"></br>
+<div class="col-md-12 ml-auto  ">
+  <a class="text-light mr-3"href="#">
+<strong><u>Tablet Version</u></strong></a>
+<a class="text-light mr-3"href="#">
+<strong><u>Mobile Version</u></strong></a>
+<a class="text-light mr-3"href="#">
+<strong><u>Your Account</u></strong></a>
+<a class="text-light mr-3"href="#">
+<strong><u>Make Change Online To Your Booking</u></strong></a>
+<a class="text-light mr-3"href="#">
+<strong><u>Customer Serviece Help</u></strong></a>
+<a class="text-light mr-3"href="#">
+<strong><u>Become an affiliate</u></strong></a>
+<a class="text-light mr-3"href="#">
+<strong><u>Booking.com for business</u></strong></a>
+</div>
+<br></br>
+</div>
+
+<div class="container">
+  <div class="d-flex justify-content-around">
+  <div class="mt-4">
+    <ul>
+  <a href="#">
+  <small>Countries</small></a></ul>
+  <ul>
+  <a href="#">
+  <small>Regions </small></a></ul>
+  <ul>
+  <a href="#">
+  <small>Cities </small></a></ul>
+  <ul>
+  <a href="#">
+  <small>Districts
+</small></a></ul>
+<ul>
+  <a href="#">
+  <small>Hotels
+</small></a></ul>
+<ul>
+  <a href="#">
+  <small>Airports
+</small></a></ul>
+<ul>
+  <a href="#">
+  <small>Places of Interest
+</small></a></ul>
+</div>
+<div class=" mt-4">
+  <ul>
+<a href="#">
+<small>Vacation Rentals</small></a></ul>
+<ul>
+<a href="#">
+<small>Apartments</small></a></ul>
+<ul>
+<a href="#">
+<small>Resorts</small></a></ul>
+<ul>
+<a href="#">
+<small>Villas
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Hostels
+</small></a></ul>
+<ul>
+<a href="#">
+<small>B&Bs
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Guest houses
+</small></a></ul>
+</div>
+<div class=" mt-4">
+  <ul>
+<a href="#">
+<small>Unique Places to Stay</small></a></ul>
+<ul>
+<a href="#">
+<small>All Destinations</small></a></ul>
+<ul>
+<a href="#">
+<small>Reviews</small></a></ul>
+<ul>
+<a href="#">
+<small>Unpacked: Travel articles
+</small></a></ul>
+
+</div>
+<div class=" mt-4">
+  <ul>
+<a href="#">
+<small>Car Rental</small></a></ul>
+<ul>
+<a href="#">
+<small>Flight Finder</small></a></ul>
+<ul>
+<a href="#">
+<small>Restaurant Reservations</small></a></ul>
+<ul>
+<a href="#">
+<small>Seek&Go
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Booking.com for Travel Agents
+</small></a></ul>
+
+</div>
+<div class="mt-4">
+  <ul>
+<a href="#">
+<small>About Booking.com</small></a></ul>
+<ul>
+<a href="#">
+<small>Give website feedback </small></a></ul>
+<ul>
+<a href="#">
+<small>Customer Service Help </small></a></ul>
+<ul>
+<a href="#">
+<small>Careers
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Press Center
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Investor Relations
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Terms & Conditions
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Privacy & Cookies
+</small></a></ul>
+<ul>
+<a href="#">
+<small>Corporate contact
+</small></a></ul>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="col-md-11 ">
+<hr class="style6" style="width:1000px; height:auto"></hr>
+<div class="col-md-12">
+<p><small>Whoever you are, whatever you want, we've got the perfect place for you.
+   Our 28,533,768 listings include 5,311,326 listings of homes, apartments and other unique places to stay,
+    and are located in 133,373 destinations in 228 countries and territories.
+   Booking.com B.V. is based in Amsterdam, the Netherlands and is supported internationally by 198 offices in 70 countries.</small></p>
+ </div>
+<hr class="style6" style="width:1000px; height:auto"></hr>
+</div>
+</div>
+<Center>
+<a href="#">
+<strong>Extranet Login</strong></a></ul>
+</center>
+<div class="col-md-11 ml-auto mt-4">
+<small>
+Copyright @ 1996-2018 Booking.com. All rights reserved</small>
+</div>
+<Center class="mt-4">
+  <small>
+Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</small>
+
+</Center>
+<footer>
+<Center>
+  <a href=" #">
+<img src="img/booking.png" class="mr-3" style="height:auto;width:100px;"></a>
+<a href=" #">
+<img src="img/priceline.png" class="mr-3" style="height:auto;width:100px;">/<a>
+  <a href=" #">
+<img src="img/kayak.png" class="mr-3" style="height:auto;width:100px;"></a>
+<a href=" #">
+<img src="img/agoda.png"  class="mr-3" style="height:auto;width:100px;"></a>
+<a href=" #">
+<img src="img/rental.png"  class="mr-3" style="height:auto;width:100px;"></a>
+<a href=" #">
+<img src="img/open.png" class="mr-3" style="height:auto;width:100px;"></a>
+</center>
+</footer>
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="hide.js"></script>
+    </body>
+</html>

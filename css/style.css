@@ -1,0 +1,23 @@
+
+body {
+  padding-top: 54px;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+
+  }
+}
+
+.navbar {
+  border-bottom: solid 2px #fd7e14;
+  padding-top: 5px;
+
+}
+
+
+.nav-up {
+    top: -100px;
+}
